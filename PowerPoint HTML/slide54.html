@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            margin: 10px;
+            background-color: #ffffff; /* Set background to pure white */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content {
+            max-width: 800px;
+            background-color: #ffffff; /* Set background to pure white */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .explanation {
+            text-align: justify;
+            margin-top: 10px;
+        }
+        .explanation h3 {
+            margin-bottom: 5px;
+        }
+        .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .image-col {
+            margin: 10px;
+        }
+        .confusion-matrix {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="explanation">
+                <h3>Confusion Matrices for Different Models</h3>
+                <p>Below are the confusion matrices for the four models evaluated in this project: Logistic Regression, Support Vector Machine (SVM), Decision Tree, and K-Nearest Neighbors (KNN). All models produced similar results, which indicates consistent performance across different algorithms. The matrices show the number of correct and incorrect classifications, with 'landed' and 'did not land' as the classes.</p>
+            </div>
+            <div class="image-row">
+                <div class="image-col">
+                    <h4>Logistic Regression</h4>
+                    <img src="E:/Capstone-Project-IBM-Data-Science/PowerPoint HTML/con1.png" alt="Logistic Regression Confusion Matrix" class="confusion-matrix">
+                </div>
+                <div class="image-col">
+                    <h4>Support Vector Machine</h4>
+                    <img src="E:/Capstone-Project-IBM-Data-Science/PowerPoint HTML/con2.png" alt="SVM Confusion Matrix" class="confusion-matrix">
+                </div>
+                <div class="image-col">
+                    <h4>Decision Tree</h4>
+                    <img src="E:/Capstone-Project-IBM-Data-Science/PowerPoint HTML/con3.png" alt="Decision Tree Confusion Matrix" class="confusion-matrix">
+                </div>
+                <div class="image-col">
+                    <h4>K-Nearest Neighbors</h4>
+                    <img src="E:/Capstone-Project-IBM-Data-Science/PowerPoint HTML/con4.png" alt="KNN Confusion Matrix" class="confusion-matrix">
+                </div>
+            </div>
+            <div class="explanation">
+                <h3>Observations:</h3>
+                <p>All models have correctly classified 12 instances of 'landed' and misclassified 3 instances of 'did not land' as 'landed'. There are no instances where a 'landed' instance was classified as 'did not land'. This consistent pattern suggests that while the models are quite good at predicting successful landings, there is still some room for improvement in predicting failures.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

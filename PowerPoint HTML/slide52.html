@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            margin: 10px;
+            background-color: #ffffff; /* Set background to pure white */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content {
+            max-width: 800px;
+            background-color: #ffffff; /* Set background to pure white */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .explanation {
+            margin-top: 10px;
+            text-align: justify;
+        }
+        .explanation h3 {
+            margin-bottom: 5px;
+        }
+        .chart-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="explanation">
+                <h3>Classification Accuracy</h3>
+                <p>This chart visualizes the built model accuracy for all classification models used in the analysis. The accuracy of each model is compared to determine which model has the highest classification accuracy.</p>
+                <h3>Key Findings:</h3>
+                <p>The bar chart shows the accuracy of Logistic Regression, SVM, Decision Tree, and KNN models. The model with the highest accuracy can be identified from the chart.</p>
+                <ul>
+                    <li><strong>Logistic Regression Accuracy:</strong> 84.64%</li>
+                    <li><strong>SVM Accuracy:</strong> 84.82%</li>
+                    <li><strong>Decision Tree Accuracy:</strong> 87.50%</li>
+                    <li><strong>KNN Accuracy:</strong> 84.82%</li>
+                </ul>
+                <h3>Conclusion:</h3>
+                <p>Among the tested models, the Decision Tree model exhibited the highest classification accuracy at 87.50%, followed by SVM and KNN, both at approximately 84.82%. Logistic Regression also performed well with an accuracy of 84.64%. These results suggest that the Decision Tree model is the most effective for this dataset.</p>
+                <img src="E:/Capstone-Project-IBM-Data-Science/PowerPoint HTML/barchart.png" alt="Model Accuracies Bar Chart" class="chart-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

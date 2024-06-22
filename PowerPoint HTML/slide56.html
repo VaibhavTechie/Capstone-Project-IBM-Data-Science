@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .explanation {
+            text-align: justify;
+            margin-top: 20px;
+        }
+        .explanation h3 {
+            margin-bottom: 10px;
+        }
+        .explanation ul {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .explanation li {
+            margin-bottom: 10px;
+        }
+        .code-snippet {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+        .chart-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .chart-image {
+            max-width: 49%;
+            height: auto;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="explanation">
+            <h3>Appendix</h3>
+            <h4>Python Code Snippets:</h4>
+            <div class="code-snippet">
+                <code>
+                # Import necessary libraries<br>
+                import pandas as pd<br>
+                import numpy as np<br>
+                import matplotlib.pyplot as plt<br>
+                import seaborn as sns<br>
+                from sklearn import preprocessing<br>
+                from sklearn.model_selection import train_test_split, GridSearchCV<br>
+                from sklearn.linear_model import LogisticRegression<br>
+                from sklearn.svm import SVC<br>
+                from sklearn.tree import DecisionTreeClassifier<br>
+                from sklearn.neighbors import KNeighborsClassifier<br><br>
+                
+                # Function to plot confusion matrix<br>
+                def plot_confusion_matrix(y, y_predict):<br>
+                    from sklearn.metrics import confusion_matrix<br>
+                    cm = confusion_matrix(y, y_predict)<br>
+                    ax = plt.subplot()<br>
+                    sns.heatmap(cm, annot=True, ax=ax)<br>
+                    ax.set_xlabel('Predicted labels')<br>
+                    ax.set_ylabel('True labels')<br>
+                    ax.set_title('Confusion Matrix')<br>
+                    ax.xaxis.set_ticklabels(['did not land', 'land'])<br>
+                    ax.yaxis.set_ticklabels(['did not land', 'landed'])<br>
+                    plt.show()<br>
+                </code>
+            </div>
+            <h4>Charts and Visualizations:</h4>
+            <div class="chart-row">
+                <img src="barchart.png" alt="Model Accuracies Bar Chart" class="chart-image">
+                <img src="CCAFSLC-40.png" alt="CCAFS LC-40 Chart" class="chart-image">
+                <img src="VAFB.png" alt="VAFB Chart" class="chart-image">
+                <img src="KSCLC.png" alt="KSC LC-39A Chart" class="chart-image">
+                <img src="CCAFSSLC-40.png" alt="CCAFS SLC-40 Chart" class="chart-image">
+            </div>
+            <h4>SQL Queries:</h4>
+            <div class="code-snippet">
+                <code>
+                SELECT * FROM launch_data WHERE outcome = 'Success';<br>
+                SELECT COUNT(*) FROM launch_data WHERE booster_version = 'FT';<br>
+                </code>
+            </div>
+            <h4>Notebook Outputs:</h4>
+            <div class="code-snippet">
+                <code>
+                Logistic Regression Accuracy: 0.8464285714285713<br>
+                SVM Accuracy: 0.8482142857142856<br>
+                Decision Tree Accuracy: 0.875<br>
+                KNN Accuracy: 0.8482142857142858<br>
+                </code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

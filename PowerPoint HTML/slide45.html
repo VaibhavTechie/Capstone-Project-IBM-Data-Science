@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            margin: 10px;
+            background-color: #ffffff; /* Set background to pure white */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content {
+            max-width: 800px;
+            background-color: #ffffff; /* Set background to pure white */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            text-align: justify;
+        }
+        .explanation {
+            margin-top: 10px;
+        }
+        .explanation h3 {
+            margin-bottom: 5px;
+        }
+        .dashboard-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="explanation">
+                <h3>Launch Success Count Dashboard</h3>
+                <p>This dashboard displays the total success launches count for all SpaceX launch sites in a pie chart format. Each section of the pie chart represents the proportion of successful launches for a specific launch site.</p>
+                <h3>Key Elements:</h3>
+                <p>The dashboard includes the following components:</p>
+                <ul>
+                    <li><strong>Total Success Launches By Site:</strong> A pie chart showing the distribution of successful launches across different launch sites.</li>
+                    <li><strong>Payload Range (Kg):</strong> A slider to filter the launches based on the payload mass.</li>
+                    <li><strong>Correlation between Payload and Success:</strong> A scatter plot displaying the correlation between the payload mass and the success of the launches for all sites.</li>
+                </ul>
+                <h3>Observations:</h3>
+                <ul>
+                    <li>The majority of successful launches are from CCAFS LC-40, followed by KSC LC-39A and VAFB SLC-4E.</li>
+                    <li>The payload range slider allows for interactive filtering of the data to analyze specific payload ranges.</li>
+                    <li>The scatter plot indicates the relationship between payload mass and the success of the launches, with different colors representing various booster versions.</li>
+                </ul>
+                <h3>Conclusion:</h3>
+                <p>This dashboard provides a comprehensive view of the success rates of SpaceX launches across different sites, allowing for detailed analysis of payload impacts and site-specific performance. The visualizations help in identifying key patterns and insights into SpaceX's launch history.</p>
+                <img src="E:/Capstone-Project-IBM-Data-Science/PowerPoint HTML/dash1.png" alt="Dashboard Screenshot" class="dashboard-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
